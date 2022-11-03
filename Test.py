@@ -1,1 +1,1 @@
-pip install ipython pandas plotly
+import ploty as px
