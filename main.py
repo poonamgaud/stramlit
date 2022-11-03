@@ -1,8 +1,8 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import time
-
+import time as t
+import plotly.express as px
 
 # read csv from a github repo
 df = pd.read_csv("Bank.csv")
@@ -65,4 +65,4 @@ for seconds in range(200):
      st.write(fig2)
      st.markdown("### Detailed Data View")
      st.dataframe(df)
-     time.sleep(1)
+     t.sleep(1)
