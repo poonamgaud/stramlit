@@ -1,1 +1,1 @@
-import ploty as px
+import plotly as px
