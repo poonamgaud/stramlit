@@ -5,7 +5,7 @@ import time
 import plotly.express as px
 
 # read csv from a github repo
-df = pd.read_csv("C:/Users/User2/Downloads/Bank.csv")
+df = pd.read_csv("Bank.csv")
 
 st.set_page_config(
  page_title='Real-Time Data Science Dashboard',
