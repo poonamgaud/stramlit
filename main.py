@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import time
-import plotly.express as px
+
 
 # read csv from a github repo
 df = pd.read_csv("Bank.csv")
