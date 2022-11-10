@@ -8,13 +8,13 @@ import plotly.express as px
 df = pd.read_csv("Bank.csv")
 
 st.set_page_config(
- page_title='Real-Time Data Science Dashboard',
+ page_title='Real-Time ',
  page_icon='✅',
  layout='wide'
 )
 
 
-st.title("Real-Time / Live Data Science Dashboard")
+st.title("Real-Time")
 
 
 
@@ -49,13 +49,13 @@ for seconds in range(200):
 
  fig_col1, fig_col2 = st.columns(2)
  with fig_col1:
-     st.markdown("### First Chart")
+     st.markdown("First Chart")
      fig = px.density_heatmap(data_frame=df, y='age_new', x='marital')
      st.write(fig)
  with fig_col2:
-     st.markdown("### Second Chart")
+     st.markdown("Second Chart")
      fig2 = px.histogram(data_frame=df, x='age_new')
      st.write(fig2)
-     st.markdown("### Detailed Data View")
+     st.markdown("Detailed Data View")
      st.dataframe(df)
      time.sleep(1)
